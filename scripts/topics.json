@@ -1,0 +1,37 @@
+{
+  "_note": "比較記事の定義。1エントリ=1記事。serviceIds は src/data/services.json の id を並べたい順（=rank順）に列挙する。scripts/generate.py がこの定義とservices.jsonを読み、Claudeに講評文だけ書かせてcontent/articles/{slug}.md を生成する。",
+  "topics": [
+    {
+      "slug": "gyousei-shoshi-course",
+      "title": "行政書士の通信講座・スクール比較",
+      "categorySlug": "law",
+      "category": "法律・士業",
+      "theme": "行政書士を目指す人向けに、通信講座・スクールを学習スタイル・サポート体制・続けやすさの観点で比較する。独学から一歩進めたい初学者や、幅広い法律系資格を視野に入れる人の講座選びを整理する",
+      "serviceIds": [
+        "gyousei-teppan",
+        "lec"
+      ]
+    },
+    {
+      "slug": "technical-qualification",
+      "title": "電気・施工管理・建築系の資格講座比較",
+      "categorySlug": "technical",
+      "category": "技術・建築",
+      "theme": "電験三種・施工管理技士・二級建築士・インテリアコーディネーターなど技術/建築系の資格講座を、学習サポート・講座形式・続けやすさの観点で比較する。働きながら合格を目指す社会人向けに整理する",
+      "serviceIds": [
+        "nousen",
+        "housing-interior"
+      ]
+    },
+    {
+      "slug": "online-shikaku-learning",
+      "title": "スマホで学べるオンライン資格学習という選択",
+      "categorySlug": "online",
+      "category": "オンライン資格学習",
+      "theme": "スマホやPCで学べるオンライン資格学習サービスを、学習スタイル・対応資格の幅・費用の観点で紹介する。まとまった時間を取りにくい人がスキマ時間で学ぶための選び方を整理する",
+      "serviceIds": [
+        "onsuku"
+      ]
+    }
+  ]
+}

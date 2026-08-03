@@ -1,0 +1,98 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_NAME } from '../consts';
+
+const title = `運営者情報｜${SITE_NAME}`;
+const description = `${SITE_NAME}の運営者情報。運営者・サイトの方針・アフィリエイト広告や掲載情報の取り扱いについてご案内します。`;
+const breadcrumbs = [
+  { name: 'ホーム', url: '/' },
+  { name: '運営者情報', url: '/about/' },
+];
+const updated = '2026.08.03';
+---
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs}>
+  <main class="mx-auto max-w-3xl px-4 py-8">
+    <nav class="flex flex-wrap items-center gap-1 text-xs font-medium text-ink/40" aria-label="パンくず">
+      <a href={import.meta.env.BASE_URL} class="hover:text-brand-600">ホーム</a><span>／</span><span class="text-ink/60">運営者情報</span>
+    </nav>
+
+    <h1 class="mt-3 text-2xl font-black leading-tight sm:text-3xl">{SITE_NAME}について</h1>
+    <p class="mt-2 text-xs text-ink/40">最終更新：{updated}</p>
+
+    <div class="mt-6 space-y-8 text-[15px] leading-relaxed text-ink/80">
+      <section>
+        <h2 class="mb-2 text-lg font-black text-ink">{SITE_NAME}について</h2>
+        <p>
+          {SITE_NAME}は、資格の通信講座・スクールを、費用・特徴・サポート内容といった観点で比較・紹介する、資格取得のための比較メディアです。
+          数ある講座の違いを並べて見比べられるようにし、目的に合った学び方を選びやすくすることを目指しています。
+        </p>
+      </section>
+
+      <section>
+        <h2 class="mb-2 text-lg font-black text-ink">運営者情報</h2>
+        <div class="overflow-hidden rounded-xl border border-black/5">
+          <table class="w-full border-collapse bg-white text-sm">
+            <tbody>
+              <tr class="border-b border-black/5">
+                <th class="w-32 bg-brand-50 p-3 text-left font-bold text-ink/70">サイト名</th>
+                <td class="p-3">{SITE_NAME}</td>
+              </tr>
+              <tr class="border-b border-black/5">
+                <th class="bg-brand-50 p-3 text-left font-bold text-ink/70">運営者</th>
+                <td class="p-3">TODGE</td>
+              </tr>
+              <tr class="border-b border-black/5">
+                <th class="bg-brand-50 p-3 text-left font-bold text-ink/70">事業内容</th>
+                <td class="p-3">資格の通信講座・スクールの比較・紹介メディアの企画・運営（成果報酬型アフィリエイト）</td>
+              </tr>
+              <tr>
+                <th class="bg-brand-50 p-3 text-left font-bold text-ink/70">運営方針</th>
+                <td class="p-3">資格の講座を費用・特徴・サポートで公平に比較し、学びのはじめの一歩を後押しする。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="mb-2 text-lg font-black text-ink">アフィリエイト広告について</h2>
+        <p>
+          当サイトは、成果報酬型のアフィリエイト広告（ASP）を利用しています。
+          記事内のリンクを経由して講座への申し込み等が行われた場合、当サイトが広告主から成果報酬を受け取ることがあります。
+          報酬の有無は、記事で紹介する講座の選定・評価に影響を与えないよう努めています。
+        </p>
+      </section>
+
+      <section>
+        <h2 class="mb-2 text-lg font-black text-ink">掲載情報の取り扱い</h2>
+        <ul class="ml-5 list-disc space-y-1.5">
+          <li>講座名・費用・コース内容・特徴等は、各講座・スクールの公開情報をもとに掲載時点の情報を表示しています。</li>
+          <li>費用・コース内容・キャンペーン等は変動します。<b>最新かつ正確な情報は、必ず各講座・スクールの公式サイトでご確認ください。</b></li>
+          <li>掲載内容には万全を期していますが、正確性・完全性を保証するものではありません。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="mb-2 text-lg font-black text-ink">アクセス解析・Cookie について</h2>
+        <p>
+          当サイトでは、サイトの利用状況を把握し改善するためにアクセス解析ツールを利用する場合があります。
+          これらのツールは Cookie を使用することがありますが、個人を特定する情報は含まれません。
+          Cookie の利用はブラウザの設定から無効にできます。
+        </p>
+      </section>
+
+      <section>
+        <h2 class="mb-2 text-lg font-black text-ink">免責事項</h2>
+        <p>
+          当サイトの情報を利用して生じたいかなる損害についても、運営者は責任を負いかねます。
+          講座への申し込み・受講にあたっては、各公式サイトの記載および利用者ご自身の判断でお願いいたします。
+          リンク先の外部サイトの内容についても、当サイトは責任を負いません。
+        </p>
+      </section>
+    </div>
+
+    <p class="mt-10">
+      <a href={import.meta.env.BASE_URL} class="inline-flex items-center gap-1 text-sm font-black text-brand-600 hover:underline">← トップへ戻る</a>
+    </p>
+  </main>
+</BaseLayout>

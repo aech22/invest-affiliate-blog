@@ -1,0 +1,75 @@
+{
+  "_note": "案件レジストリ（単一ソース）。Python生成とAstro描画の両方がこのファイルを読む。事実（name/priceNote/tags/officialUrl等）は運営者が公開情報から手入力。affiliateUrl は ASP提携承認後に記入し approved:true にする。承認前は approved:false のまま＝公式サイトへ rel=nofollow リンク。※seed値の料金・特徴（tags/priceNote）は公開情報ベースだが、公開前に運営者が最新の一次情報で必ず検証すること。",
+  "services": [
+    {
+      "id": "lec",
+      "name": "LEC東京リーガルマインド",
+      "subCategory": "law",
+      "tags": ["資格受験指導37年の実績", "司法書士・弁理士・行政書士など幅広い", "Web通信・音声DL・スマホ講座", "常時多数の講座ラインナップ"],
+      "priceNote": "講座により異なる",
+      "target": "法律・士業系の国家資格を目指す人",
+      "officialUrl": "https://px.a8.net/svt/ejp?a8mat=4B9X1F+A7XWMQ+1G62+62U36",
+      "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4B9X1F+A7XWMQ+1G62+62U36",
+      "asp": "a8",
+      "approved": true,
+      "pros": [],
+      "cons": []
+    },
+    {
+      "id": "gyousei-teppan",
+      "name": "行政書士TEPPAN通信講座",
+      "subCategory": "law",
+      "tags": ["書籍＋オンライン講義の連動", "重要論点に絞った構成", "スマホ/PCでスキマ時間学習", "過去問演習を収録"],
+      "priceNote": "書籍＋オンライン講義の通信講座",
+      "target": "独学から一歩進めたい行政書士の初学者",
+      "officialUrl": "https://px.a8.net/svt/ejp?a8mat=4B9X1F+AWY41E+408S+HVFKY",
+      "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4B9X1F+AWY41E+408S+HVFKY",
+      "asp": "a8",
+      "approved": true,
+      "pros": [],
+      "cons": []
+    },
+    {
+      "id": "nousen",
+      "name": "能セン",
+      "subCategory": "technical",
+      "tags": ["電験三種・施工管理技士に特化", "毎日フォローの勉強管理", "オンライン/通学の両対応", "毎年最新の試験傾向に更新"],
+      "priceNote": "講座により異なる",
+      "target": "電験三種・施工管理技士を確実に取りたい社会人",
+      "officialUrl": "https://px.a8.net/svt/ejp?a8mat=4B9X1F+8D9CVM+5TS8+5YJRM",
+      "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4B9X1F+8D9CVM+5TS8+5YJRM",
+      "asp": "a8",
+      "approved": true,
+      "pros": [],
+      "cons": []
+    },
+    {
+      "id": "housing-interior",
+      "name": "ハウジングインテリアカレッジ",
+      "subCategory": "technical",
+      "tags": ["二級建築士・インテリアコーディネーターの通信", "丁寧な添削対応", "動画＋オンライン講座", "資格認定団体の支部が運営"],
+      "priceNote": "通信講座（添削つき）",
+      "target": "二級建築士・インテリアコーディネーター資格を目指す人",
+      "officialUrl": "https://px.a8.net/svt/ejp?a8mat=4B9X1F+9U8XPU+4O48+60WN6",
+      "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4B9X1F+9U8XPU+4O48+60WN6",
+      "asp": "a8",
+      "approved": true,
+      "pros": [],
+      "cons": []
+    },
+    {
+      "id": "onsuku",
+      "name": "オンスク.JP",
+      "subCategory": "online",
+      "tags": ["月額1,628円で60講座以上が学び放題", "スマホ/PCマルチデバイス対応", "資格の学校TACのノウハウ", "宅建・簿記・ITパスポート等"],
+      "priceNote": "月額1,628円（ウケホーダイ）",
+      "target": "低コストで幅広い資格をつまみ学習したい人",
+      "officialUrl": "https://px.a8.net/svt/ejp?a8mat=4B9X1F+ATDIEQ+408S+60OXE",
+      "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4B9X1F+ATDIEQ+408S+60OXE",
+      "asp": "a8",
+      "approved": true,
+      "pros": [],
+      "cons": []
+    }
+  ]
+}
