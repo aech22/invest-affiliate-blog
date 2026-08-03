@@ -20,7 +20,7 @@ const articles = defineCollection({
     date: z.coerce.date(),
     updated: z.coerce.date().nullish(),
     description: z.string().nullish(),
-    category: z.string().nullish(),       // 表示ラベル（例: 法律・士業）
+    category: z.string().nullish(),       // 表示ラベル（例: 株式投資スクール）
     categorySlug: z.string().nullish(),   // 結合キー（例: programming）
     intro: z.string().nullish(),
     outro: z.string().nullish(),

@@ -1,6 +1,6 @@
-// サイトの分類体系（シカクナビ＝資格の通信講座・スクールの比較ハブ）。
+// サイトの分類体系（トウシナビ＝投資・資産運用が「学べるスクール」の比較ハブ）。
 // slug は services.json の subCategory ・記事frontmatterの categorySlug と一致させる（結合キー）。
-// gender 軸は無い。資格ジャンルを法律・士業／技術・建築／オンライン資格学習の3分類で扱う（2026-08-03）。
+// 投資助言ではなく学習サービス（スクール・講座）の比較。株式投資スクール／FX・外貨スクールの2分類で扱う（2026-08-03）。
 
 export interface Category {
   slug: string;
@@ -10,9 +10,8 @@ export interface Category {
 }
 
 export const CATEGORIES: Category[] = [
-  { slug: 'law', label: '法律・士業', emoji: '⚖️', blurb: '行政書士・司法書士など、法律・士業系の資格講座を費用・サポートで比較。' },
-  { slug: 'technical', label: '技術・建築', emoji: '🏗️', blurb: '電気・施工管理・建築士・インテリアなど、技術/建築系の資格講座を比較。' },
-  { slug: 'online', label: 'オンライン資格学習', emoji: '📱', blurb: 'スマホで学べる資格学習サービスや、幅広い資格に対応する講座を比較。' },
+  { slug: 'stock', label: '株式投資スクール', emoji: '📈', blurb: '株式投資の基礎から実践までを体系的に学べるスクール・講座を、内容とサポートで比較。' },
+  { slug: 'fx', label: 'FX・外貨スクール', emoji: '💹', blurb: 'FX・外貨投資を基礎から学べるスクール・講座を、カリキュラムとサポート体制で比較。' },
 ];
 
 export const categoryBySlug = (slug?: string | null): Category | undefined =>

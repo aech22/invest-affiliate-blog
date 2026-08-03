@@ -13,7 +13,7 @@ const articles = (await getCollection('articles')).sort(
 const usedCats = new Set(articles.map((a) => a.data.categorySlug).filter(Boolean));
 const catChips = CATEGORIES.filter((c) => usedCats.has(c.slug));
 
-const site = Astro.site ?? new URL('https://aech22.github.io/shikaku-affiliate-blog');
+const site = Astro.site ?? new URL('https://aech22.github.io/invest-affiliate-blog');
 const listLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
@@ -27,7 +27,7 @@ const listLd = {
   })),
 };
 ---
-<BaseLayout title={`${SITE_NAME}｜資格の通信講座・スクール比較`}>
+<BaseLayout title={`${SITE_NAME}｜投資・資産運用が学べるスクール比較`}>
   <Jsonld data={listLd} />
 
   <!-- ヒーロー -->
@@ -35,10 +35,13 @@ const listLd = {
     <div class="mx-auto max-w-5xl px-4 py-14 sm:py-20">
       <p class="text-xs font-black tracking-[0.2em] text-white/80">COMPARE &amp; CHOOSE</p>
       <h1 class="mt-3 text-3xl font-black leading-tight sm:text-4xl">
-        資格の学びを、<br class="sm:hidden" />自分に合う一つに。
+        投資の学びを、<br class="sm:hidden" />自分に合う一つに。
       </h1>
       <p class="mt-4 max-w-xl leading-relaxed text-white/90">
-        {SITE_TAGLINE}<b class="font-bold text-white">費用・特徴・サポート</b>で並べて比較し、目的に合った学び方を見つけやすくします。
+        {SITE_TAGLINE}<b class="font-bold text-white">内容・費用・サポート</b>で並べて比較し、目的に合った学び方を見つけやすくします。
+      </p>
+      <p class="mt-4 max-w-xl text-xs leading-relaxed text-white/80">
+        ※当サイトは投資助言ではなく、投資・資産運用を学ぶスクール・講座の紹介です。投資には元本割れのリスクがあり、最終判断はご自身の責任で行ってください。
       </p>
     </div>
   </section>
