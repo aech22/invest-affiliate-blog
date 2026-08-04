@@ -28,7 +28,7 @@ const {
 const site = Astro.site ?? new URL('https://aech22.github.io/invest-affiliate-blog');
 const canonical = new URL(Astro.url.pathname, site);
 // 既定はブランドOGP(/ogp.png)。記事など個別に指定があればそれを使う。
-const ogImg = new URL(ogImage ?? '/ogp.png', site).toString();
+const ogImg = new URL(ogImage ?? (import.meta.env.BASE_URL + 'ogp.png'), site).toString();
 const year = new Date().getFullYear();
 
 // サイト共通の構造化データ
